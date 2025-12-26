@@ -7,17 +7,17 @@ public class SubStrings {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the String: ");
-		String s = scan.nextLine();
-		subStrings(s);
+		String string = scan.nextLine();
+		subStrings(string);
 		scan.close();
 		
 	}
-	public static void subStrings(String s) {
+	public static void subStrings(String string) {
 		
-		for(int size=1; size<=s.length(); size++) {
-			for(int i=0; i<=s.length()-size; i++) {
+		for(int size=1; size<=string.length(); size++) {
+			for(int i=0; i<=string.length()-size; i++) {
 				for(int j=i; j<i+size; j++) {
-					System.out.print(s.charAt(j));
+					System.out.print(string.charAt(j));
 				}
 				System.out.println();
 			}
