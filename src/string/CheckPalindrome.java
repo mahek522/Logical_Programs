@@ -8,8 +8,8 @@ public class CheckPalindrome {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the String to check for Palindrome:");
-		String s = scan.nextLine();
-		if(isPalindrome(s)) {
+		String string = scan.nextLine();
+		if(isPalindrome(string)) {
 			System.out.println("Yes, it is Palindrome.");
 		}
 		else {
@@ -17,11 +17,11 @@ public class CheckPalindrome {
 		}
 		scan.close();
 	}
-	public static boolean isPalindrome(String s) {
+	public static boolean isPalindrome(String string) {
 		int i=0;
-		int j=s.length()-1;
+		int j=string.length()-1;
 		while(i<j) {
-			if(s.charAt(i)!=s.charAt(j)) {
+			if(string.charAt(i)!=string.charAt(j)) {
 				return false;
 			}
 			else {
