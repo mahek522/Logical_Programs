@@ -9,10 +9,10 @@ public class FrequencyOfCharacters {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the String: ");
-		String s = scan.nextLine();
+		String string = scan.nextLine();
 		LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
-		for(char c : s.toCharArray()) {
-			map.put(c,  map.getOrDefault(c, 0)+1);
+		for(char character : string.toCharArray()) {
+			map.put(character,  map.getOrDefault(character, 0)+1);
 		}
 		System.out.println("Frequency of Characters: ");
 		System.out.println(map);
