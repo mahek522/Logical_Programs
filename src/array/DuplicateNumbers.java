@@ -8,20 +8,21 @@ public class DuplicateNumbers {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the length of Array:");
-		int n = scan.nextInt();
-		int[] a = new int[n];
+		int size = scan.nextInt();
+		int[] array = new int[size];
 		System.out.println("Enter the elements of sorted array: ");
-		for(int i=0; i<a.length; i++) {
-			a[i] = scan.nextInt();
+		for(int i=0; i<array.length; i++) {
+			array[i] = scan.nextInt();
 		}
-		duplicateNumbers(a);
+		duplicateNumbers(array);
 		scan.close();
 	}
-	public static void duplicateNumbers(int[] a) {
-		for(int i=0; i<a.length-1; i++) {
-			if(a[i]==a[i+1]) {
-				if(i==0 || a[i]!=a[i-1]) {
-					System.out.print(a[i] + " ");
+	
+	public static void duplicateNumbers(int[] array) {
+		for(int i=0; i<array.length-1; i++) {
+			if(array[i]==array[i+1]) {
+				if(i==0 || array[i]!=array[i-1]) {
+					System.out.print(array[i] + " ");
 				}
 			}
 		}
