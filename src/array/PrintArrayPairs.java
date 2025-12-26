@@ -8,20 +8,20 @@ public class PrintArrayPairs {
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the size of Array: ");
-		int n = scan.nextInt();
-		int[] a = new int[n];
+		int size = scan.nextInt();
+		int[] array = new int[size];
 		System.out.println("Enter the array elements: ");
-		for(int i=0; i<a.length; i++) {
-			a[i] = scan.nextInt();
+		for(int i=0; i<array.length; i++) {
+			array[i] = scan.nextInt();
 		}
-		printArrayPairs(a);
+		printArrayPairs(array);
 		scan.close();
 	}
-	public static void printArrayPairs(int[] a) {
+	public static void printArrayPairs(int[] array) {
 		System.out.println("Array pairs: ");
-		for(int i=0; i<a.length-1; i++) {
-			for(int j=i+1; j<a.length; j++) {
-				System.out.println(a[i] +" "+ a[j]);
+		for(int i=0; i<array.length-1; i++) {
+			for(int j=i+1; j<array.length; j++) {
+				System.out.println(array[i] +" "+ array[j]);
 			}
 		}
 	}
